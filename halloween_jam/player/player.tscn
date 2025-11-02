@@ -399,11 +399,7 @@ height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 13
-<<<<<<< Updated upstream
-collision_mask = 7
-=======
 collision_layer = 2
->>>>>>> Stashed changes
 script = ExtResource("1_dw050")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
