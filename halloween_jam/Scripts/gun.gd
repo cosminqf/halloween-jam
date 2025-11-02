@@ -3,6 +3,7 @@ extends Node2D
 @export var bullet =  load("res://bullet.tscn")
 @export var nrBullets = 5
 @export var spread: float = 1
+@onready var root = get_node("/root")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,7 +20,7 @@ func shoot(muzzlePosition: Vector2, direction: Vector2):
 	for i in range(nrBullets):
 		var b = bullet.instantiate()
 		b.direction = direction + Vector2(spread * (randf()-0.5), spread * (randf()-0.5))
-		owner.owner.add_child(b)
+		root.get_child(0).add_child(b)
 		b.global_position = muzzlePosition + Vector2(100 * spread * (randf()-0.5), 100 * spread * (randf()-0.5))
 	$Cooldown.start()
 	
