@@ -14,6 +14,11 @@ config/name="Halloween_Jam"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Scripts/Global.gd"
+Player="*res://player/player.tscn"
+
 [input]
 
 move_left={

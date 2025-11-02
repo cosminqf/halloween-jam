@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://detwugmh7s3a5"]
 
-[ext_resource type="Script" uid="uid://w7r1sofajft7" path="res://Test_Things/Testing_Area/Enemy_Test.gd" id="1_k7g4d"]
+[ext_resource type="Script" uid="uid://w7r1sofajft7" path="res://Test_Things/Testing_Area/Enemy.gd" id="1_k7g4d"]
 [ext_resource type="Texture2D" uid="uid://dgb5qn1sii5xx" path="res://player/character_roundRed.png" id="2_us3a4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_us3a4"]
@@ -41,4 +41,7 @@ target_position = Vector2(0, 0)
 wait_time = 0.3
 autostart = true
 
+[node name="Timer2" type="Timer" parent="."]
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
