@@ -20,7 +20,6 @@ func Initialize(stats):
 
 func _ready() -> void:
 	timerAttack.wait_time = attackDelay
-	print("sdsds")
 
 func Hit(damage):
 	health -= damage

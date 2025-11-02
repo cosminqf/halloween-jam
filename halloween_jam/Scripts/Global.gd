@@ -8,6 +8,7 @@ var enemiesTypes = {"type1" : [70, 10, 10, 200, 1],
 				"type2" : [150, 150, 5, 300, 1]
 				}
 
+var currentLevel = 0
 var TestAreaFinished = false
 var TestAreaDoors = false
 

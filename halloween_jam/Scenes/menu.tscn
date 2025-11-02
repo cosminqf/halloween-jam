@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cl60r2lr02xig"]
+[gd_scene load_steps=3 format=3 uid="uid://c37pnrml77jn7"]
 
-[ext_resource type="Script" uid="uid://br48irl517ds6" path="res://Scripts/menu.gd" id="1_1rerr"]
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_1rerr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xhh6f"]
 font_size = 28
@@ -18,10 +18,10 @@ offset_bottom = 374.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = -582.0
-offset_top = -138.0
-offset_right = 583.0
-offset_bottom = 339.0
+offset_left = -580.0
+offset_top = -238.0
+offset_right = 585.0
+offset_bottom = 239.0
 text = "You are a hunter of ghosts.
 Uninvited, you enter the house with the sould purpose to kill
 every single one of them with your trusty shotgun
@@ -31,6 +31,6 @@ good luck!
 
 
 
-(also, didn't have time to drwa a propper menu so just press SPACE to start)"
+(also, didn't have time to draw a proper menu so just press SPACE to start)"
 label_settings = SubResource("LabelSettings_xhh6f")
 horizontal_alignment = 1
