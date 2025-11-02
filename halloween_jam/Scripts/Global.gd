@@ -28,7 +28,6 @@ func SpawnEnemies(wave, level):
 				pass
 				
 			enemy_instance.Initialize(enemiesTypes[enemy])
-			
 			var random_spawn : Marker2D = spawn_points.pick_random()
 			spawn_points.erase(random_spawn)
 			

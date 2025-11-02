@@ -20,6 +20,7 @@ func Initialize(stats):
 
 func _ready() -> void:
 	timerAttack.wait_time = attackDelay
+	print("sdsds")
 
 func Hit(damage):
 	health -= damage
@@ -78,14 +79,12 @@ func _on_timer_timeout() -> void:
 	
 func Attack():
 	timerAttack.start()
-	
-	for child in get_children():
-		if child.name.begins_with("hand"):
-			child.shoot()
 
 func _on_timer_2_timeout() -> void:
 	var path_distance = nav_agent.distance_to_target()
 	line_of_sight.force_raycast_update()
 	if path_distance <= attackRange and !line_of_sight.is_colliding():
 		#Player.Hit(damage)
-		pass
+		for child in get_children():
+			if child.name.begins_with("hand"):
+				child.shoot()

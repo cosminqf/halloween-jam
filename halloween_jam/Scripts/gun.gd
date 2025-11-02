@@ -85,5 +85,6 @@ func _process(delta: float) -> void:
 			Ui.EliminateBullet()
 			shoot(muzzlePosition, (get_global_mouse_position() - global_position).normalized())
 		else:
-			Ui.timer.start()
+			if Ui.timer.is_stopped():
+				Ui.timer.start()
 			
