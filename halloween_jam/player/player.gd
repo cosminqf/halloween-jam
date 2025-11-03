@@ -13,11 +13,16 @@ class_name player extends CharacterBody2D
 @onready var maxHealth = 5
 @onready var health = 5
 
+var died = 0
 var nextScene = 0
 
 func Hit(damage):
-	health -= damage
-	if health <= 0:
+	if health > 0:
+		health -= damage
+		print("am fot lovit")
+		Ui.EliminateHeart()
+	if health <= 0 and !died:
+		died = 1
 		die()
 
 func _ready() -> void:

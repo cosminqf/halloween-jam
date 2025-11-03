@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://5qtchk766f2r"]
 
-[ext_resource type="Script" uid="uid://w7r1sofajft7" path="res://Test_Things/Testing_Area/Enemy.gd" id="1_p0jax"]
-[ext_resource type="Texture2D" uid="uid://dgb5qn1sii5xx" path="res://player/character_roundRed.png" id="2_6vc86"]
+[ext_resource type="Script" uid="uid://w7r1sofajft7" path="res://Scripts/Enemy.gd" id="1_3n2en"]
+[ext_resource type="Texture2D" uid="uid://dgb5qn1sii5xx" path="res://player/character_roundRed.png" id="2_3buae"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p0jax"]
 radius = 16.0
@@ -13,11 +13,11 @@ height = 60.0
 [node name="Enemy" type="CharacterBody2D"]
 motion_mode = 1
 wall_min_slide_angle = 0.0
-script = ExtResource("1_p0jax")
+script = ExtResource("1_3n2en")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0.430866, 0.319488, 0, 1)
-texture = ExtResource("2_6vc86")
+texture = ExtResource("2_3buae")
 
 [node name="CollisionWalls" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_p0jax")
@@ -32,6 +32,8 @@ shape = SubResource("CapsuleShape2D_us3a4")
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 avoidance_enabled = true
 radius = 18.0
+avoidance_layers = 16
+avoidance_mask = 16
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = false

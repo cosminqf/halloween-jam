@@ -13,8 +13,9 @@ func _process(delta: float) -> void:
 	
 
 func EliminateHeart():
-	var chosenHeart = hearts[Player.health]
-	chosenHeart.modulate.a = 0.2
+	if Player.health >= 0:
+		var chosenHeart = hearts[Player.health]
+		chosenHeart.modulate.a = 0.2
 	
 func ReloadHearts():
 	for heart in hearts:

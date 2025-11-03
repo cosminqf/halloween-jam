@@ -11,19 +11,10 @@ config_version=5
 [application]
 
 config/name="Halloween_Jam"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-run/main_scene="uid://cl60r2lr02xig"
-config/features=PackedStringArray("4.5", "Forward Plus")
-=======
-run/main_scene="uid://blunqhxawrtbf"
+run/main_scene="uid://c37pnrml77jn7"
 config/features=PackedStringArray("4.4", "Forward Plus")
->>>>>>> Stashed changes
-=======
-run/main_scene="uid://blunqhxawrtbf"
-config/features=PackedStringArray("4.4", "Forward Plus")
->>>>>>> Stashed changes
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://cl60r2lr02xig"
 
 [autoload]
 

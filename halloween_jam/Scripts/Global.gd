@@ -1,16 +1,26 @@
 extends Node
 
-@onready var enemy1 = preload("res://Test_Things/Testing_Area/Enemy.tscn")
-@onready var enemy2 = preload("res://Test_Things/Testing_Area/Enemy2.tscn")
+@onready var enemy1 = preload("res://Scenes/Enemy.tscn")
+@onready var enemy2 = preload("res://Scenes/Enemy2.tscn")
 
 #speed, health, damage, attackRange, attackDelay
 var enemiesTypes = {"type1" : [70, 10, 10, 200, 1],
 				"type2" : [150, 150, 5, 300, 1]
 				}
+var levels = [
+	"res://LevelScenes/Level0.tscn",
+	"res://LevelScenes/Level1.tscn",
+	"res://LevelScenes/Level2.tscn",
+	"res://LevelScenes/Level3.tscn"
+]
 
 var currentLevel = 0
 var TestAreaFinished = false
-var TestAreaDoors = false
+
+var Level0Finished = false
+var Level1Finished = false
+var Level2Finished = false
+var Level3Finished = false
 
 func SpawnEnemies(wave, level):
 	var current_scene = get_tree().current_scene

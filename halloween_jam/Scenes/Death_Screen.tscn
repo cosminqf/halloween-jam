@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://ykgf3oissykk"]
+[gd_scene load_steps=3 format=3 uid="uid://b2od2qy3ndbw3"]
 
 [ext_resource type="Script" uid="uid://y5e8ss3jj737" path="res://Scripts/death_screen.gd" id="1_lx4i3"]
 
@@ -20,7 +20,7 @@ offset_right = -547.0
 offset_bottom = -517.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(29.172926, 29.172926)
+scale = Vector2(29.1729, 29.1729)
 script = ExtResource("1_lx4i3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -44,4 +44,4 @@ one_shot = true
 autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(20.155674, 19.058765)
+position = Vector2(20.1557, 19.0588)

@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var bullet =  load("res://ghost_bullet.tscn")
+@export var bullet =  load("res://Scenes/ghost_bullet.tscn")
 @export var nrBullets = 1
 @export var spread: float = 1
 @onready var root = get_node("/root")
