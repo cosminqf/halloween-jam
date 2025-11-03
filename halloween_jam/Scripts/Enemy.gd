@@ -56,6 +56,8 @@ func _physics_process(delta: float) -> void:
 		var dir = global_position.direction_to(next_point)
 		var desired_velocity = dir * speed
 		velocity = velocity.lerp(desired_velocity, delta * 10)
+		if $Sprite2D.sprite_frames.has_animation("walk"):
+			$Sprite2D.play("walk")
 	else:
 		velocity = velocity.lerp(Vector2.ZERO, delta * 10)
 		if timerAttack.is_stopped():

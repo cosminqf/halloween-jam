@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		Player.visible = true
 		Ui.visible = true
+		Player.set_physics_process(true)
 		for child in Player.get_children():
 			if child.name == "Camera2D":
 				child.make_current()
