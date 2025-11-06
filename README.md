@@ -1,6 +1,6 @@
 # Ghosthunter
 
-Made for **GoedWare Game Jam Halloween Part 2** *(in just 2 days)*  
+Made for **GoedWare Game Jam Halloween Part 2** *(in only 2 days)*  
 🏆 Placed **TBD**
 
 🎮 Play on itch.io: [Ghosthunter](https://cosminqf.itch.io/ghosthunter)
